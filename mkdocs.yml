@@ -1,0 +1,86 @@
+site_name: PHLYXR
+site_description: PHLYXR - a contraceptive sexual lubricant that prevents STI transmission.
+site_author: PHLYXR Team
+site_url: https://phlyxr.com
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode - FIXED
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Montserrat
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - announce.dismiss
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+
+extra_css:
+  - stylesheets/extra.css?v=3
+
+extra:
+  mailing_list_url: https://forms.gle/3UL5G6cJibZKnsHC7
+  survey_url: https://forms.gle/5mRht5skMUeueyKU8
+  startbook_url: https://startbook.app/events/imperial/ventures/phlyxr
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/phlyxr/
+      name: PHLYXR on Instagram
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/phlyxr/
+      name: PHLYXR on LinkedIn
+  
+  generator: false
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - footnotes
+  - pymdownx.mark
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+#copyright: Copyright &copy; 2026 PHLYXR. All rights reserved.
