@@ -295,6 +295,14 @@ body:has(.md-banner).md-sidebar--primary {
   font-size: 0.9rem;
 }
 
+/* Hide the black search bar, keep only the icon */.md-search__form {
+  display: none !important;
+}
+
+/* Ensure search icon remains visible */.md-header__button.md-icon {
+  display: block;
+}
+
 /* ============================================
    HERO SECTION
    ============================================ */.hero-section {
@@ -1291,3 +1299,12 @@ body:has([data-md-toggle="drawer"]:checked) {
 }.md-nav__item--nested.md-nav__item--active >.md-nav__link::after {
   transform: rotate(180deg);
 }
+
+/* ============================================
+   HIDE BLACK SEARCH BAR COMPLETELY
+   ============================================ */
+
+/* Hide the entire search section in header */.md-search {
+  display: none !important;
+}
+
