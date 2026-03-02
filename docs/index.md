@@ -7,11 +7,11 @@
 <div class="hero-tagline fade-in"><strong>PHLYXR - a contraceptive sexual lubricant that prevents STI transmission</strong></div>
 
 <div class="hero-subtitle fade-in">
-In development. Microbiome friendly. Designed for vaginal comfort.
+A New Era in Sexual Health
 </div>
 
 <div class="hero-description fade-in">
-Premium feel • Non-hormonal • Designed for vaginal pH • Vegan
+Microbiome friendly • Non-hormonal • Designed for vaginal pH • Vegan
 </div>
 
 <div class="fade-in hero-ctas">
