@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Sitemap: https://phlyxr.com/sitemap.xml
+
+# Block specific bots if needed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Allow OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# Allow Google's AI
+User-agent: Google-Extended
+Allow: /
+
+# Allow Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+# Allow Common Crawl (used by many AI)
+User-agent: CCBot
+Allow: /
