@@ -1308,3 +1308,95 @@ body:has([data-md-toggle="drawer"]:checked) {
   display: none !important;
 }
 
+/* ============================================
+   SURVEY INFO PAGE IMPROVEMENTS
+   ============================================ */
+
+/* Better spacing for survey page */.md-typeset h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--phlyxr-light-purple);
+}.md-typeset h2:first-of-type {
+  border-top: none;
+  margin-top: 1rem;
+}
+
+/* Improve admonition styling */.md-typeset.admonition {
+  margin: 2rem 0;
+  padding: 1.5rem;
+}.md-typeset.admonition.info {
+  border-left-color: var(--phlyxr-primary);
+}.md-typeset.admonition.warning {
+  border-left-color: var(--phlyxr-urgent);
+}.md-typeset.admonition.note {
+  border-left-color: var(--phlyxr-light-purple);
+}.md-typeset.admonition-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}.md-typeset.admonition p:last-child {
+  margin-bottom: 0;
+}
+
+/* Better list styling in survey page */.md-typeset ul li {
+  margin: 0.5rem 0;
+}
+
+/* CTA panel improvements */.cta-panel {
+  background: linear-gradient(135deg, rgba(190,172,228,0.25) 0%, rgba(216,213,217,0.45) 100%);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--phlyxr-light-purple);
+  margin: 3rem 0;
+  box-shadow: 0 4px 15px rgba(52, 0, 176, 0.1);
+}.cta-panel h3 {
+  color: var(--phlyxr-primary);
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+/* Button container */.cta-panel > div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Sticky CTA improvements */.sticky-mobile-cta {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* ============================================
+   DARK MODE - SURVEY PAGE
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-typeset h2 {
+  border-top-color: rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].cta-panel {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.15) 0%, rgba(47, 47, 53, 0.5) 100%);
+  border-color: var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].cta-panel h3 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-typeset.admonition {
+  background: linear-gradient(135deg, var(--phlyxr-bg-secondary) 0%, var(--phlyxr-bg-tertiary) 100%);
+}
+
+[data-md-color-scheme="slate"].md-typeset.admonition-title {
+  background-color: rgba(190, 172, 228, 0.2);
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-typeset.admonition.warning.admonition-title {
+  background-color: rgba(255, 107, 107, 0.2);
+  color: var(--phlyxr-urgent);
+}
