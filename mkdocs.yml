@@ -23,8 +23,8 @@ theme:
     - navigation.indexes
     - toc.follow
     - toc.integrate
-    #- search.suggest
-    #- search.highlight
+    - search.suggest
+    - search.highlight
     - content.code.copy
     - announce.dismiss
   favicon: assets/favicon.ico
