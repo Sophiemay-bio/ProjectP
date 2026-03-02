@@ -41,7 +41,7 @@ jobs:
       - run: pip install zensical
       
       # Build with zensical and specify output
-      - run: zensical build --site-dir site
+      - run: zensical build
       
       - uses: actions/configure-pages@v5
       
