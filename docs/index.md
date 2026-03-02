@@ -55,7 +55,7 @@ STI diagnoses remain high across England, and antibiotic resistance is a growing
 <div class="stat-card urgent">
 <div class="stat-number">+506%</div>
 <div class="stat-label">Gonorrhoea cases in Europe since 2010</div>
-<div class="stat-source"><a href="https://www.statista.com/statistics/654903/percentage-change-in-sti-infections-in-the-eu-and-uk/" target="_blank" rel="noopener">EU STI data 2010-2023</a></div>
+<div class="stat-source"><a href="https://www.statista.com/statistics/654903/percentage-change-in-sti-infections-in-the-eu-and-uk/" target="_blank" rel="noopener">ECDC 2010-2023</a></div>
 </div>
 
 <div class="stat-card urgent">
@@ -109,23 +109,20 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
 
 <div class="feature-card">
 <div class="feature-icon">💧</div>
-
-### Feels like a premium lubricant
-Texture and sensation matter. We are designing PHLYXR to be enjoyable to use, not a compromise.
+<div class="feature-title">Feels like a premium lubricant</div>
+<p>Texture and sensation matter. We are designing PHLYXR to be enjoyable to use, not a compromise.</p>
 </div>
 
 <div class="feature-card">
 <div class="feature-icon">🦠</div>
-
-### Designed around the vaginal microbiome
-pH aligned to the typical vaginal range and avoiding common irritants, so it is gentler on vaginal comfort.
+<div class="feature-title">Designed around the vaginal microbiome</div>
+<p>pH aligned to the typical vaginal range and avoiding common irritants, so it is gentler on vaginal comfort.</p>
 </div>
 
 <div class="feature-card">
 <div class="feature-icon">🛡️</div>
-
-### A new layer of prevention
-Our formulation approach aims to bind and neutralise pathogens in the lubricant layer. This is being tested in vitro.
+<div class="feature-title">A new layer of prevention</div>
+<p>Our formulation approach aims to bind and neutralise pathogens in the lubricant layer. This is being tested in vitro.</p>
 </div>
 
 </div>
@@ -163,42 +160,46 @@ Our formulation approach aims to bind and neutralise pathogens in the lubricant 
 ## Progress {#progress}
 
 <div class="milestones">
-
-- ✅ MVP created and initial formulation work completed
-- ✅ Characterisation work completed (rheology and stability checks)
-- 🔄 In vitro testing and formulation refinement ongoing
-- 📅 Next: patent filing, manufacturing scale up, and clinical planning
-- 🎯 Target launch: 2027 (subject to trials and MHRA pathway)
-
+<ul>
+<li>✅ MVP created and initial formulation work completed</li>
+<li>✅ Characterisation work completed (rheology and stability checks)</li>
+<li>🔄 In vitro testing and formulation refinement ongoing</li>
+<li>📅 Next: patent filing, manufacturing scale up, and clinical planning</li>
+<li>🎯 Target launch: 2027 (subject to trials and MHRA pathway)</li>
+</ul>
 </div>
 
 ---
 
-## For investors {#investors}
-
 <details class="investor-toggle">
-<summary>For investors ▼</summary>
+<summary>For investors</summary>
 
 <div class="investor-panel">
 
-### Snapshot
+<h3>Snapshot</h3>
 
-- **Stage:** Preclinical in vitro testing
-- **Primary wedge:** Premium lubricant with added prevention functionality
-- **Planned pathway:** MHRA aligned clinical evaluation and regulatory strategy
-- **Raising:** £1.8M (to fund safety work, clinical feasibility, and regulatory preparation)
+<ul>
+<li><strong>Stage:</strong> Preclinical in vitro testing</li>
+<li><strong>Primary wedge:</strong> Premium lubricant with added prevention functionality</li>
+<li><strong>Planned pathway:</strong> MHRA aligned clinical evaluation and regulatory strategy</li>
+<li><strong>Raising:</strong> £1.8M (to fund safety work, clinical feasibility, and regulatory preparation)</li>
+</ul>
 
-### Use of funds
+<h3>Use of funds</h3>
 
-- Preclinical efficacy and safety packages
-- CRO supported safety data
-- Early feasibility clinical trial
-- Regulatory submission preparation and quality systems
+<ul>
+<li>Preclinical efficacy and safety packages</li>
+<li>CRO supported safety data</li>
+<li>Early feasibility clinical trial</li>
+<li>Regulatory submission preparation and quality systems</li>
+</ul>
 
-### Contact
+<h3>Contact</h3>
 
-- **Investor enquiries:** [invest@phlyxr.com](mailto:invest@phlyxr.com)
-- **Startbook:** [View on Startbook](https://startbook.app/events/imperial/ventures/phlyxr)
+<ul>
+<li><strong>Investor enquiries:</strong> <a href="mailto:invest@phlyxr.com">invest@phlyxr.com</a></li>
+<li><strong>Startbook:</strong> <a href="https://startbook.app/events/imperial/ventures/phlyxr" target="_blank" rel="noopener">View on Startbook</a></li>
+</ul>
 
 </div>
 
@@ -228,7 +229,7 @@ Our formulation approach aims to bind and neutralise pathogens in the lubricant 
 <img src="assets/JW.png" alt="James Warren">
 <h3>James Warren, PhD</h3>
 <p class="team-role">Biomaterials Engineer</p>
-<p>Soft matter, rheology, and formulation development specialist</p>
+<p>Bioengineer with biofluids expertise and IP know-how</p>
 <a href="https://www.linkedin.com/in/jamespwarren1/" target="_blank" rel="noopener" class="linkedin-icon" aria-label="James's LinkedIn">
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
 </a>
@@ -264,17 +265,19 @@ Our formulation approach aims to bind and neutralise pathogens in the lubricant 
 
 ---
 
-## Join the mailing list {#mailinglist}
+<h2 id="mailinglist">Join the mailing list</h2>
 
 Be first to hear about development updates, opportunities to test, and launch announcements.
 
 <div class="cta-panel">
 
-### What you get
+<h3>What you get</h3>
 
-- Early access and updates
-- Opportunities to give feedback
-- Launch announcements and offers
+<ul>
+<li>Early access and updates</li>
+<li>Opportunities to give feedback</li>
+<li>Launch announcements and offers</li>
+</ul>
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button large" target="_blank" rel="noopener">Join the mailing list</a>
@@ -296,12 +299,17 @@ Your feedback shapes the product. It takes about 5 minutes.
 
 <div class="footer-cta">
 
-## Ready to redefine protection?
+<div class="footer-logo-container">
+  <div class="footer-logo-pill"></div>
+  <img src="assets/logo.png" alt="PHLYXR Logo" class="footer-logo-img">
+</div>
 
-**PHLYXR** – *a contraceptive sexual lubricant that prevents STI transmission*
+<h2>Ready to redefine protection?</h2>
+
+<p><strong>PHLYXR</strong> – <em>a contraceptive sexual lubricant that prevents STI transmission</em></p>
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button">Join the mailing list</a>
+  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button tertiary">Join the mailing list</a>
   <a href="https://forms.gle/5mRht5skMUeueyKU8" class="cta-button tertiary">Take the survey</a>
   <a href="https://startbook.app/events/imperial/ventures/phlyxr" class="cta-button tertiary" target="_blank" rel="noopener">Startbook</a>
 </div>
@@ -310,21 +318,20 @@ Your feedback shapes the product. It takes about 5 minutes.
 
 <div class="sources-footer">
 
-### Sources
-
-- UK Health Security Agency. **GRASP report: data to September 2025.** 2025. [GOV.UK](https://www.gov.uk/government/publications/gonococcal-resistance-to-antimicrobials-surveillance-programme-grasp-report/grasp-report-data-to-september-2025)
-- UK Health Security Agency. **Quarterly report on diagnoses of syphilis, gonorrhoea and ceftriaxone-resistant gonorrhoea in England: provisional data, December 2025.** 2025. [GOV.UK](https://www.gov.uk/government/publications/sti-quarterly-surveillance-reports-provisional-data/quarterly-report-on-diagnoses-of-syphilis-gonorrhoea-and-ceftriaxone-resistant-gonorrhoea-in-england-provisional-data-december-2025)
-- UK Parliament. **The prevalence of sexually transmitted infections in young people and other high risk groups – Report Summary.** 2024. [Parliament](https://publications.parliament.uk/pa/cm5804/cmselect/cmwomeq/463/summary.html)
-- Giacani L, Bradshaw CS, Muzny CA, Graves KJ, Pasricha S, Jordan SJ, et al. (2025). **Antimicrobial Resistance in Curable Sexually Transmitted Infections.** *Curr HIV/AIDS Rep.* 22(1):14. [Full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11995306/)
-- UK Health Security Agency. **STI Prioritisation Framework.** 2024. [GOV.UK](https://assets.publishing.service.gov.uk/media/6974b0164883520241b7969f/STI-prioritisation-framework.pdf)
+<h3>Sources</h3>
 
 <details>
-<summary>Additional source</summary>
-
-- Department of Health and Social Care. **Abortion statistics commentary, England and Wales: 2023.** 2026. [GOV.UK](https://www.gov.uk/government/statistics/abortion-statistics-for-england-and-wales-2023/abortion-statistics-commentary-england-and-wales-2023)
-
+<summary>View all sources</summary>
+<ul>
+<li>UK Health Security Agency. <strong>GRASP report: data to September 2025.</strong> 2025. <a href="https://www.gov.uk/government/publications/gonococcal-resistance-to-antimicrobials-surveillance-programme-grasp-report/grasp-report-data-to-september-2025" target="_blank" rel="noopener">GOV.UK</a></li>
+<li>UK Health Security Agency. <strong>Quarterly report on diagnoses of syphilis, gonorrhoea and ceftriaxone-resistant gonorrhoea in England: provisional data, December 2025.</strong> 2025. <a href="https://www.gov.uk/government/publications/sti-quarterly-surveillance-reports-provisional-data/quarterly-report-on-diagnoses-of-syphilis-gonorrhoea-and-ceftriaxone-resistant-gonorrhoea-in-england-provisional-data-december-2025" target="_blank" rel="noopener">GOV.UK</a></li>
+<li>UK Parliament. <strong>The prevalence of sexually transmitted infections in young people and other high risk groups – Report Summary.</strong> 2024. <a href="https://publications.parliament.uk/pa/cm5804/cmselect/cmwomeq/463/summary.html" target="_blank" rel="noopener">Parliament</a></li>
+<li>Giacani L, Bradshaw CS, Muzny CA, Graves KJ, Pasricha S, Jordan SJ, et al. (2025). <strong>Antimicrobial Resistance in Curable Sexually Transmitted Infections.</strong> <em>Curr HIV/AIDS Rep.</em> 22(1):14. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11995306/" target="_blank" rel="noopener">Full text</a></li>
+<li>UK Health Security Agency. <strong>STI Prioritisation Framework.</strong> 2024. <a href="https://assets.publishing.service.gov.uk/media/6974b0164883520241b7969f/STI-prioritisation-framework.pdf" target="_blank" rel="noopener">GOV.UK</a></li>
+<li>Department of Health and Social Care. <strong>Abortion statistics commentary, England and Wales: 2023.</strong> 2026. <a href="https://www.gov.uk/government/statistics/abortion-statistics-for-england-and-wales-2023/abortion-statistics-commentary-england-and-wales-2023" target="_blank" rel="noopener">GOV.UK</a></li>
+</ul>
 </details>
 
 </div>
 
-<a class="sticky-mobile-cta" href="https://forms.gle/3UL5G6cJibZKnsHC7" target="_blank" rel="noopener">Join the mailing list</a> 
+<a class="sticky-mobile-cta" href="https://forms.gle/5mRht5skMUeueyKU8" target="_blank" rel="noopener">Take the survey</a>

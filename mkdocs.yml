@@ -7,23 +7,9 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: deep purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    
-    # Dark mode - FIXED
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: deep purple
+    accent: deep purple
   font:
     text: Montserrat
     code: Roboto Mono
@@ -31,7 +17,12 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
     - toc.follow
+    - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -41,6 +32,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css?v=3
+
+extra_javascript:
+  - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js
+  - javascripts/extra.js
 
 extra:
   mailing_list_url: https://forms.gle/3UL5G6cJibZKnsHC7
@@ -58,6 +53,7 @@ extra:
 
 nav:
   - Home: index.md
+  - Survey Information: survey-info.md
 
 plugins:
   - search

@@ -79,37 +79,12 @@
 {% endblock %}
 
 {% block announce %}
-<div class="md-announce">
-  <div class="md-announce__inner md-grid md-typeset">
-    <span>✨ <strong>PHLYXR is in development.</strong> Join the mailing list or take our 5 minute survey.</span>
-    <a class="announce-cta primary" href="{{ config.extra.mailing_list_url }}" target="_blank" rel="noopener">Mailing list</a>
-    <a class="announce-cta" href="{{ config.extra.survey_url }}" target="_blank" rel="noopener">Survey</a>
+<div class="md-banner">
+  <div class="md-banner__inner md-grid md-typeset">
+    <span>✨ <strong>PHLYXR is in development.</strong></span>
+    <span>Join the mailing list or take our 5 minute survey.</span>
+    <a class="announce-cta-inline primary" href="https://forms.gle/3UL5G6cJibZKnsHC7" target="_blank" rel="noopener">Mailing list</a>
+    <a class="announce-cta-inline primary" href="https://forms.gle/5mRht5skMUeueyKU8" target="_blank" rel="noopener">Survey</a>
   </div>
 </div>
-
-<style>.md-announce {
-    background: #3400B0 !important;
-    color: #FFFFFF !important;
-  }.md-announce * {
-    color: #FFFFFF !important;
-  }.md-announce__inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }.announce-cta {
-    display: inline-block;
-    padding: 0.35rem 0.9rem;
-    border-radius: 999px;
-    font-weight: 700;
-    text-decoration: none !important;
-    border: 2px solid rgba(255,255,255,0.65);
-    color: #FFFFFF !important;
-  }.announce-cta:hover {
-    border-color: #FFFFFF;
-  }.announce-cta.primary {
-    background: rgba(255,255,255,0.15);
-  }
-</style>
 {% endblock %}
