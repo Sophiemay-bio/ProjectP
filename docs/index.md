@@ -42,7 +42,7 @@ Microbiome friendly • Non-hormonal • Designed for vaginal pH • Vegan
 </div>
 
 !!! warning "In development"
-    PHLYXR is currently in preclinical testing and is not yet approved for STI prevention or contraception. We are designing it to be used alongside safer sex choices.
+    PHLYXR is currently in preclinical testing and is not yet approved for STI prevention or contraception. We are designing it to be used alongside safer sex choices whilst we plan our clinical trials.
 
 ---
 
@@ -122,7 +122,7 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
 <div class="feature-card">
 <div class="feature-icon">🛡️</div>
 <div class="feature-title">A new layer of prevention</div>
-<p>Our formulation approach aims to bind and neutralise pathogens in the lubricant layer. This is being tested in vitro.</p>
+<p>Our formulation approach aims to bind and neutralise pathogens whilst acting as a spermicidal too. This is being tested in vitro.</p>
 </div>
 
 </div>
@@ -135,7 +135,7 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
   <div class="step">
     <div class="step-icon">1</div>
     <div>
-      <strong>Apply like a lubricant.</strong><br>
+      <strong>Apply like any other lubricant.</strong><br>
       No new behaviour, no interruption.
     </div>
   </div>
@@ -197,7 +197,7 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
 <h3>Contact</h3>
 
 <ul>
-<li><strong>Investor enquiries:</strong> <a href="mailto:invest@phlyxr.com">invest@phlyxr.com</a></li>
+<li><strong>Investor enquiries:</strong> <a href="mailto:hello@phlyxr.com">hello@phlyxr.com</a></li>
 <li><strong>Startbook:</strong> <a href="https://startbook.app/events/imperial/ventures/phlyxr" target="_blank" rel="noopener">View on Startbook</a></li>
 </ul>
 

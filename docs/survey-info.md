@@ -27,7 +27,7 @@ This survey is to gauge interest in such a product. There'll be an initial quest
 
 You are being invited to take part in a market research survey. Before you decide it is important for you to understand why the survey is being done and what it will involve. Please take time to read the following information carefully and discuss it with others if you wish.
 
-Please ask if there is anything that is not clear or if you would like more information (my email address is [here](mailto:s.stephens23@imperial.ac.uk)). Take time to decide whether or not you wish to take part.
+Please ask if there is anything that is not clear or if you would like more information (our email address is [here](mailto:hello@phlyxr.com)). Take time to decide whether or not you wish to take part.
 
 Thank you for reading this.
 
