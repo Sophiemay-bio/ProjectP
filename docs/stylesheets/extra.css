@@ -16,6 +16,37 @@
 }
 
 /* ============================================
+   DARK MODE VARIABLES - UPDATED
+   ============================================ */
+
+[data-md-color-scheme="slate"] {
+  /* Color variables */
+  --phlyxr-primary: #BEACE4;
+  --phlyxr-primary-dark: #9B7FD8;
+  --phlyxr-light-purple: #7C5EC8;
+  --phlyxr-light-gray: #2A2A2E;
+  --phlyxr-dark-gray: #B8B8B8;
+  --phlyxr-white: #1A1A1D;
+  --phlyxr-urgent: #FF6B6B;
+  --phlyxr-text-primary: #E8E8E8;
+  --phlyxr-text-secondary: #B8B8B8;
+  --phlyxr-bg-primary: #1A1A1D;
+  --phlyxr-bg-secondary: #25252A;
+  --phlyxr-bg-tertiary: #2F2F35;
+  --phlyxr-border: rgba(190, 172, 228, 0.2);
+  
+  /* Material for MkDocs variables */
+  --md-default-bg-color: #1A1A1D;
+  --md-default-fg-color: #E8E8E8;
+  --md-primary-fg-color: #BEACE4;
+  --md-accent-fg-color: #BEACE4;
+  --md-typeset-color: #E8E8E8;
+  --md-typeset-a-color: #BEACE4;
+  --md-code-bg-color: #2F2F35;
+  --md-code-fg-color: #E8E8E8;
+}
+
+/* ============================================
    GLOBAL FONT & BACKGROUND - FIXED
    ============================================ */
 html, body {
@@ -25,9 +56,14 @@ html, body {
 
 body,.md-typeset {
   font-family: 'Montserrat', sans-serif !important;
+  color: var(--phlyxr-text-primary) !important;
+}
+
+/* Light mode background */
+[data-md-color-scheme="default"] body,
+[data-md-color-scheme="default"].md-typeset {
   background: linear-gradient(180deg, #FAF9FB 0%, #FFFFFF 100%) no-repeat fixed !important;
   background-size: 100% 100% !important;
-  color: var(--phlyxr-text-primary) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -306,7 +342,6 @@ body:has(.md-banner).md-sidebar--primary {
 /* ============================================
    HERO SECTION
    ============================================ */.hero-section {
-  background: linear-gradient(135deg, #FAF9FB 0%, #F5F3F7 100%);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -368,6 +403,88 @@ body:has(.md-banner).md-sidebar--primary {
   margin: 0 0.35rem;
   opacity: 0.8;
   color: var(--phlyxr-text-primary);
+}
+
+/* ============================================
+   DARK MODE - HERO SECTION
+   ============================================ */
+
+[data-md-color-scheme="slate"].hero-section {
+  background: linear-gradient(135deg, #25252A 0%, #2F2F35 100%) !important;
+  border-bottom: 1px solid rgba(190, 172, 228, 0.2);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+}
+
+[data-md-color-scheme="slate"].phlyxr-logo-img {
+  filter: brightness(1.1);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+[data-md-color-scheme="slate"].hero-tagline {
+  color: #BEACE4 !important;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+[data-md-color-scheme="slate"].hero-subtitle {
+  color: #B8B8B8 !important;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"].hero-description {
+  color: #B8B8B8 !important;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"].kicker {
+  background: rgba(190, 172, 228, 0.15) !important;
+  border: 1px solid rgba(190, 172, 228, 0.2) !important;
+  color: #BEACE4 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+}
+
+[data-md-color-scheme="slate"].hero-links {
+  color: #E8E8E8 !important;
+}
+
+[data-md-color-scheme="slate"].hero-link {
+  color: #E8E8E8 !important;
+  border-bottom-color: #BEACE4 !important;
+}
+
+[data-md-color-scheme="slate"].hero-link:hover {
+  color: #BEACE4 !important;
+  border-bottom-color: #9B7FD8 !important;
+}
+
+[data-md-color-scheme="slate"].hero-links.dot {
+  color: #B8B8B8 !important;
 }
 
 /* ============================================
@@ -776,7 +893,7 @@ h2#for-investors {
   margin: 1.25rem 0 0 0;
   padding: 1.75rem 1.75rem 1.25rem 1.75rem;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(216,213,217,0.6) 100%);
+  background: linear-gradient(135deg, rgba(176, 169, 217, 0.85) 0%, rgba(216,213,217,0.6) 100%);
   border: 1px solid rgba(52,0,176,0.12);
 }.mini-chart-title {
   font-weight: 900;
@@ -789,7 +906,7 @@ h2#for-investors {
   max-width: 760px;
   display: block;
 }.mini-axis {
-  stroke: rgba(133,124,136,0.6);
+  stroke: rgba(83, 72, 87, 0.95);
   stroke-width: 2;
 }.mini-bar {
   fill: rgba(52,0,176,0.45);
@@ -802,11 +919,11 @@ h2#for-investors {
 }.mini-label {
   font-weight: 800;
   font-size: 16px;
-  fill: rgba(133,124,136,0.95);
+  fill: rgba(83, 72, 87, 0.95);
 }.mini-chart-note {
   margin-top: 0.75rem;
   font-size: 0.92rem;
-  color: rgba(133,124,136,0.95);
+  color: rgba(83, 72, 87, 0.95);
   font-weight: 600;
 }.mini-chart-note a {
   color: rgba(52,0,176,0.95) !important;
@@ -1400,3 +1517,613 @@ body:has([data-md-toggle="drawer"]:checked) {
   background-color: rgba(255, 107, 107, 0.2);
   color: var(--phlyxr-urgent);
 }
+
+/* ============================================
+   DARK MODE VARIABLES
+   ============================================ */
+
+[data-md-color-scheme="slate"] {
+  --phlyxr-primary: #BEACE4;
+  --phlyxr-primary-dark: #9B7FD8;
+  --phlyxr-light-purple: #7C5EC8;
+  --phlyxr-light-gray: #2A2A2E;
+  --phlyxr-dark-gray: #B8B8B8;
+  --phlyxr-white: #1A1A1D;
+  --phlyxr-urgent: #FF6B6B;
+  --phlyxr-text-primary: #E8E8E8;
+  --phlyxr-text-secondary: #B8B8B8;
+  --phlyxr-bg-primary: #1A1A1D;
+  --phlyxr-bg-secondary: #25252A;
+  --phlyxr-bg-tertiary: #2F2F35;
+  --phlyxr-border: rgba(190, 172, 228, 0.2);
+}
+
+/* ============================================
+   DARK MODE - GLOBAL STYLES
+   ============================================ */
+
+[data-md-color-scheme="slate"] body,
+[data-md-color-scheme="slate"].md-typeset {
+  background: linear-gradient(180deg, #1A1A1D 0%, #25252A 100%) no-repeat fixed !important;
+  background-size: 100% 100% !important;
+  color: var(--phlyxr-text-primary) !important;
+}
+
+[data-md-color-scheme="slate"].md-main,
+[data-md-color-scheme="slate"].md-container,
+[data-md-color-scheme="slate"].md-content {
+  background: transparent !important;
+}
+
+/* ============================================
+   DARK MODE - HEADER
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-header {
+  background: linear-gradient(90deg, #2A2A2E 0%, #1F1F23 100%) !important;
+  border-bottom: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-tabs {
+  background-color: var(--phlyxr-bg-tertiary) !important;
+  border-bottom: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-header__button.md-logo {
+  background: rgba(190, 172, 228, 0.15);
+  border: 1px solid var(--phlyxr-border);
+}
+
+/* ============================================
+   DARK MODE - ANNOUNCEMENT BAR
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-banner {
+  background: linear-gradient(90deg, #2F2F35 0%, #25252A 100%) !important;
+  border-bottom: 1px solid var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-banner__inner * {
+  color: var(--phlyxr-text-primary) !important;
+}
+
+[data-md-color-scheme="slate"].announce-cta-inline {
+  background: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+  border: 1.5px solid var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].announce-cta-inline:hover {
+  background: var(--phlyxr-primary-dark);
+  border-color: var(--phlyxr-primary-dark);
+  color: #1A1A1D !important;
+}
+
+[data-md-color-scheme="slate"].announce-cta-inline.primary {
+  background: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+}
+
+/* ============================================
+   DARK MODE - SIDEBAR
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-sidebar--primary {
+  background-color: var(--phlyxr-bg-secondary);
+  border-right: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-nav__link {
+  color: var(--phlyxr-text-primary);
+}
+
+[data-md-color-scheme="slate"].md-nav__link:hover {
+  background-color: rgba(190, 172, 228, 0.15);
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-nav__link--active {
+  background-color: rgba(190, 172, 228, 0.25);
+  color: var(--phlyxr-primary) !important;
+}
+
+[data-md-color-scheme="slate"].md-nav__title {
+  color: var(--phlyxr-primary);
+}
+
+/* ============================================
+   DARK MODE - BUTTONS
+   ============================================ */
+
+[data-md-color-scheme="slate"].cta-button {
+  background-color: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+  border-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].cta-button:hover {
+  background-color: var(--phlyxr-primary-dark);
+  color: #1A1A1D !important;
+  box-shadow: 0 5px 15px rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].cta-button.secondary {
+  background-color: transparent;
+  color: var(--phlyxr-primary) !important;
+  border: 2px solid var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].cta-button.secondary:hover {
+  background-color: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+}
+
+[data-md-color-scheme="slate"].cta-button.tertiary {
+  background-color: rgba(190, 172, 228, 0.15);
+  color: var(--phlyxr-primary) !important;
+  border: 2px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].cta-button.tertiary:hover {
+  background-color: rgba(190, 172, 228, 0.25);
+}
+
+/* ============================================
+   DARK MODE - CARDS
+   ============================================ */
+
+[data-md-color-scheme="slate"].stat-card,
+[data-md-color-scheme="slate"].feature-card {
+  background: linear-gradient(135deg, var(--phlyxr-bg-secondary) 0%, var(--phlyxr-bg-tertiary) 100%);
+  border-left-color: var(--phlyxr-primary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"].stat-card:hover,
+[data-md-color-scheme="slate"].feature-card:hover {
+  box-shadow: 0 8px 25px rgba(190, 172, 228, 0.2);
+  border-left-color: var(--phlyxr-primary-dark);
+}
+
+[data-md-color-scheme="slate"].stat-number {
+  color: var(--phlyxr-urgent);
+}
+
+[data-md-color-scheme="slate"].stat-label {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].stat-source {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].stat-source a {
+  color: var(--phlyxr-primary) !important;
+  border-bottom-color: rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].stat-source a:hover {
+  border-bottom-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].feature-title,
+[data-md-color-scheme="slate"].feature-card h3 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].feature-card p {
+  color: var(--phlyxr-text-secondary);
+}
+
+/* ============================================
+   DARK MODE - TEAM CARDS
+   ============================================ */
+
+[data-md-color-scheme="slate"].team-card {
+  background: var(--phlyxr-bg-secondary);
+  border-top-color: var(--phlyxr-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"].team-card:hover {
+  box-shadow: 0 8px 25px rgba(190, 172, 228, 0.25);
+}
+
+[data-md-color-scheme="slate"].team-card h3 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].team-card.team-role,
+[data-md-color-scheme="slate"].team-card p {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].team-card img {
+  border-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].linkedin-icon {
+  background: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].linkedin-icon:hover {
+  background: var(--phlyxr-primary-dark);
+}
+
+/* ============================================
+   DARK MODE - INVESTOR PANEL
+   ============================================ */
+
+[data-md-color-scheme="slate"].investor-toggle {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.1) 0%, rgba(47, 47, 53, 0.5) 100%);
+  border-left-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].investor-toggle:hover {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.15) 0%, rgba(47, 47, 53, 0.6) 100%);
+}
+
+[data-md-color-scheme="slate"].investor-toggle summary {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].investor-panel h3 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].investor-panel p,
+[data-md-color-scheme="slate"].investor-panel li {
+  color: var(--phlyxr-text-secondary);
+}
+
+/* ============================================
+   DARK MODE - OTHER SECTIONS
+   ============================================ */
+
+[data-md-color-scheme="slate"].step {
+  background: linear-gradient(135deg, var(--phlyxr-bg-secondary) 0%, var(--phlyxr-bg-tertiary) 100%);
+  border-color: var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].step-icon {
+  background: var(--phlyxr-primary);
+  color: #1A1A1D;
+}
+
+[data-md-color-scheme="slate"].cta-panel {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.15) 0%, rgba(47, 47, 53, 0.5) 100%);
+}
+
+[data-md-color-scheme="slate"].note {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.1) 0%, rgba(47, 47, 53, 0.4) 100%);
+  border-left-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].note strong {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].milestones {
+  background: linear-gradient(135deg, var(--phlyxr-bg-secondary) 0%, var(--phlyxr-bg-tertiary) 100%);
+  border-left-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].info-box {
+  background: linear-gradient(135deg, rgba(190, 172, 228, 0.1) 0%, rgba(47, 47, 53, 0.4) 100%);
+  border-left-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].info-box strong {
+  color: var(--phlyxr-primary);
+ 
+}
+
+/* ============================================
+   DARK MODE - MINI CHART
+   ============================================ */
+
+[data-md-color-scheme="slate"].mini-chart-wrap {
+  background: linear-gradient(135deg, rgba(42, 42, 46, 0.85) 0%, rgba(47, 47, 53, 0.6) 100%);
+  border-color: var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].mini-chart-title {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].mini-axis {
+  stroke: rgba(184, 184, 184, 0.6);
+}
+
+[data-md-color-scheme="slate"].mini-bar {
+  fill: rgba(190, 172, 228, 0.6);
+}
+
+[data-md-color-scheme="slate"].mini-bar.urgent {
+  fill: rgba(255, 107, 107, 0.7);
+}
+
+[data-md-color-scheme="slate"].mini-value {
+  fill: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].mini-label {
+  fill: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].mini-chart-note {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].mini-chart-note a {
+  color: var(--phlyxr-primary) !important;
+  border-bottom-color: rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].mini-chart-note a:hover {
+  border-bottom-color: var(--phlyxr-primary);
+}
+
+/* ============================================
+   DARK MODE - FOOTER
+   ============================================ */
+
+[data-md-color-scheme="slate"].footer-cta {
+  background: linear-gradient(135deg, #2F2F35 0%, #25252A 100%);
+  border-top: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].footer-cta h2 {
+  color: var(--phlyxr-primary) !important;
+}
+
+[data-md-color-scheme="slate"].footer-cta p {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].footer-cta.cta-button,
+[data-md-color-scheme="slate"].footer-cta.cta-button.secondary,
+[data-md-color-scheme="slate"].footer-cta.cta-button.tertiary {
+  background-color: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+  border-color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].footer-cta.cta-button:hover,
+[data-md-color-scheme="slate"].footer-cta.cta-button.secondary:hover,
+[data-md-color-scheme="slate"].footer-cta.cta-button.tertiary:hover {
+  background-color: var(--phlyxr-primary-dark);
+  color: #1A1A1D !important;
+}
+
+[data-md-color-scheme="slate"].footer-logo-pill {
+  background: rgba(190, 172, 228, 0.15);
+  border: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].sources-footer {
+  background: rgba(47, 47, 53, 0.5);
+  border-color: var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].sources-footer h3 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].sources-footer li {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].sources-footer summary {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-footer {
+  background-color: var(--phlyxr-bg-secondary);
+  border-top: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-footer-meta {
+  background-color: var(--phlyxr-bg-primary);
+}
+
+/* ============================================
+   DARK MODE - TYPOGRAPHY
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-typeset h1 {
+  color: var(--phlyxr-primary);
+  border-bottom-color: rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].md-typeset h2 {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-typeset h3 {
+  color: var(--phlyxr-text-primary);
+}
+
+[data-md-color-scheme="slate"].md-typeset p,
+[data-md-color-scheme="slate"].md-typeset li {
+  color: var(--phlyxr-text-secondary);
+}
+
+[data-md-color-scheme="slate"].md-typeset a {
+  color: var(--phlyxr-primary);
+  text-decoration-color: rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].md-typeset a:hover {
+  color: var(--phlyxr-primary-dark);
+  text-decoration-color: var(--phlyxr-primary);
+}
+
+/* ============================================
+   DARK MODE - TABLES
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-typeset table:not([class]) {
+  border-color: var(--phlyxr-border);
+  background: var(--phlyxr-bg-secondary);
+}
+
+[data-md-color-scheme="slate"].md-typeset table:not([class]) th {
+  background-color: var(--phlyxr-primary);
+  color: #1A1A1D;
+}
+
+[data-md-color-scheme="slate"].md-typeset table:not([class]) td {
+  color: var(--phlyxr-text-secondary);
+  border-color: var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-typeset table:not([class]) tr:hover {
+  background-color: rgba(190, 172, 228, 0.1);
+}
+
+/* ============================================
+   DARK MODE - ADMONITIONS
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-typeset.admonition {
+  border-left-color: var(--phlyxr-primary);
+  background: linear-gradient(135deg, var(--phlyxr-bg-secondary) 0%, var(--phlyxr-bg-tertiary) 100%);
+}
+
+[data-md-color-scheme="slate"].md-typeset.admonition-title {
+  background-color: rgba(190, 172, 228, 0.2);
+  color: var(--phlyxr-primary);
+}
+
+/* ============================================
+   DARK MODE - SOCIAL LINKS
+   ============================================ */
+
+[data-md-color-scheme="slate"].social-links a {
+  background: var(--phlyxr-bg-secondary);
+  border: 1px solid var(--phlyxr-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"].social-links a:hover {
+  background: var(--phlyxr-primary);
+  box-shadow: 0 4px 12px rgba(190, 172, 228, 0.3);
+}
+
+[data-md-color-scheme="slate"].social-links a svg {
+  fill: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].social-links a:hover svg {
+  fill: #1A1A1D;
+}
+
+/* ============================================
+   DARK MODE - STICKY MOBILE CTA
+   ============================================ */
+
+[data-md-color-scheme="slate"].sticky-mobile-cta {
+  background: var(--phlyxr-primary);
+  color: #1A1A1D !important;
+  border-color: var(--phlyxr-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-md-color-scheme="slate"].sticky-mobile-cta:hover {
+  background: var(--phlyxr-primary-dark);
+}
+
+/* ============================================
+   DARK MODE - OVERLAY
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ============================================
+   DARK MODE - SCROLLBAR
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-sidebar__scrollwrap {
+  scrollbar-color: var(--phlyxr-primary) transparent;
+}
+
+[data-md-color-scheme="slate"].md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background: var(--phlyxr-primary-dark);
+}
+
+/* ============================================
+   DARK MODE - CODE BLOCKS
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-typeset code {
+  background-color: var(--phlyxr-bg-tertiary);
+  color: var(--phlyxr-primary);
+  border: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-typeset pre {
+  background-color: var(--phlyxr-bg-tertiary);
+  border: 1px solid var(--phlyxr-border);
+}
+
+[data-md-color-scheme="slate"].md-typeset pre code {
+  background-color: transparent;
+  border: none;
+}
+
+/* ============================================
+   DARK MODE - TEAM SECTION TITLES
+   ============================================ */
+
+[data-md-color-scheme="slate"].team-section-title {
+  color: var(--phlyxr-primary);
+}
+
+[data-md-color-scheme="slate"].team-section-subtitle {
+  color: var(--phlyxr-text-secondary);
+  border-bottom-color: rgba(190, 172, 228, 0.3);
+}
+
+/* ============================================
+   DARK MODE - HAMBURGER MENU
+   ============================================ */
+
+[data-md-color-scheme="slate"].md-header__button.md-icon {
+  color: var(--phlyxr-primary) !important;
+}
+
+[data-md-color-scheme="slate"].md-header__button.md-icon:hover {
+  background-color: rgba(190, 172, 228, 0.15);
+}
+
+/* ============================================
+   DARK MODE - SMOOTH TRANSITIONS
+   ============================================ */
+
+[data-md-color-scheme="slate"] * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================
+   DARK MODE - LOGO FILTER (OPTIONAL)
+   ============================================ */
+
+/* If your logo looks too bright in dark mode, uncomment this: */
+
+[data-md-color-scheme="slate"].md-header__button.md-logo img,
+[data-md-color-scheme="slate"].phlyxr-logo-img,
+[data-md-color-scheme="slate"].footer-logo-img {
+  filter: brightness(0.9);
+}
+
+
+/* ============================================
+   END OF DARK MODE CSS
+   ============================================ */

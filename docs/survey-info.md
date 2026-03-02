@@ -1,9 +1,8 @@
 ---
-title: Survey Information - PHLYXR
+title: Survey Information
 description: Information about our market research survey for STI prevention
 ---
-
-# Survey Information
+## Survey Information Page
 
 Thank you for taking the time to fill in this questionnaire. We're currently working on a gel that will prevent STIs and act as a contraceptive.
 
@@ -11,7 +10,7 @@ Thank you for taking the time to fill in this questionnaire. We're currently wor
 
 ---
 
-## About This Survey
+### About This Survey
 
 This survey is to gauge interest in such a product. There'll be an initial question for consent that you'll need to answer before moving forward with the rest of the survey. You'll be asked about your current contraceptive and STI prevention methods, such as the pill, coil and condom usage, and about the potential device, known as PHLYXR.
 
@@ -22,7 +21,7 @@ This survey is to gauge interest in such a product. There'll be an initial quest
 
 ---
 
-## Information Sheet and Participation Consent
+### Information Sheet and Participation Consent
 
 **Please read the following carefully:**
 
@@ -38,13 +37,13 @@ This survey is to gauge interest in such a product. There'll be an initial quest
 
 ---
 
-## Do I have to take part?
+### Do I have to take part?
 
 It is up to you to decide whether or not to take part. If you do decide to take part you can copy this information page to keep and be asked to give electronic consent in the first question. If you decide to take part you are still free to withdraw at any time and without giving a reason.
 
 ---
 
-## What is the purpose of the survey?
+### What is the purpose of the survey?
 
 The purpose of this market research survey is to determine whether there is demand for a contraceptive gel lubricant that can prevent STI spread (transmission) between sexually active individuals. 
 
@@ -63,13 +62,13 @@ For such a device to be developed, there must be demand for it and the market si
 
 ---
 
-## Why have I been invited?
+### Why have I been invited?
 
 The link to this market research survey is publicly available and is to be shared on social media channels as well other, appropriate areas of the internet. The aim is to collect as many responses as possible to determine if there's a large enough market for this product.
 
 ---
 
-## What will happen to me if I take part?
+### What will happen to me if I take part?
 
 !!! note "Survey Details"
     - **Number of questions:** 14
@@ -84,7 +83,7 @@ We will not process any personal data (as defined under the UK GDPR) about you a
 
 ---
 
-## What do I have to do?
+### What do I have to do?
 
 Complete the survey as completely as you can. If any questions make you uncomfortable and you feel unable to answer, please skip them. 
 
@@ -92,19 +91,19 @@ Complete the survey as completely as you can. If any questions make you uncomfor
 
 ---
 
-## What are the possible disadvantages and risks of taking part?
+### What are the possible disadvantages and risks of taking part?
 
 As only data is collected there will be no impact or harm to your health or wellbeing. These answers cannot be traced back to you and your data is held securely by Google with the PHLYXR team able to view the answers given. We will not be able to link answers to individuals.
 
 ---
 
-## What are the possible benefits of taking part?
+### What are the possible benefits of taking part?
 
 Unfortunately, there are no benefits to taking part and we can't, at this stage, offer any compensation for your time so **thank you for your kindness in taking part**.
 
 ---
 
-## What if something goes wrong?
+### What if something goes wrong?
 
 All data is anonymised and cannot be traced back to you, even in the case of a data breach. All data is processed by Google and any complaints or issues regarding their handling of your data can be directed to them via their [privacy policy here](https://policies.google.com/privacy?hl=en-GB){ target="_blank" }.
 

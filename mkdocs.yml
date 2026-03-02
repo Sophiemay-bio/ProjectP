@@ -7,9 +7,23 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    scheme: default
-    primary: deep purple
-    accent: deep purple
+        # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Montserrat
     code: Roboto Mono
@@ -31,7 +45,7 @@ theme:
   logo: assets/logo.png
 
 extra_css:
-  - stylesheets/extra.css?v=3
+  - stylesheets/extra.css?v=9
 
 extra_javascript:
   - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js

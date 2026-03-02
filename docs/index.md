@@ -1,3 +1,7 @@
+---
+title: Home
+description: Introducing PHLYXR, a contraceptive sexual lubraicant that prevents STI transmission
+---
 <div class="hero-section">
 
 <img src="assets/logo.png" alt="PHLYXR Logo" class="phlyxr-logo-img fade-in">
@@ -306,7 +310,7 @@ Your feedback shapes the product. It takes about 5 minutes.
 
 <h2>Ready to redefine protection?</h2>
 
-<p><strong>PHLYXR</strong> – <em>a contraceptive sexual lubricant that prevents STI transmission</em></p>
+<h3><strong>PHLYXR</strong> – <em>a contraceptive sexual lubricant that prevents STI transmission</em></h3>
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button tertiary">Join the mailing list</a>
