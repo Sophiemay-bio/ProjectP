@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Introducing PHLYXR, a contraceptive sexual lubraicant that prevents STI transmission
+description: Introducing PHLYXR, a contraceptive sexual lubricant that prevents STI transmission
 ---
 <div class="hero-section">
 
@@ -120,7 +120,7 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
 <div class="feature-card">
 <div class="feature-icon">🦠</div>
 <div class="feature-title">Designed around the vaginal microbiome</div>
-<p>pH aligned to the typical vaginal range and avoiding common irritants, so it is gentler on vaginal comfort.</p>
+<p>pH-matched to the typical vaginal pH range and avoiding common irritants, so it is gentler and more comfortable.</p>
 </div>
 
 <div class="feature-card">
@@ -140,14 +140,14 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
     <div class="step-icon">1</div>
     <div>
       <strong>Apply like any other lubricant.</strong><br>
-      No new behaviour, no interruption.
+      No new behaviour, no interruption. Water-based so can be used everywhere and with everything.
     </div>
   </div>
   <div class="step">
     <div class="step-icon">2</div>
     <div>
       <strong>Creates a protective layer.</strong><br>
-      Designed to stay in place during sex.
+      Designed to stay in place during sex and provide peace of mind.
     </div>
   </div>
   <div class="step">
@@ -169,7 +169,7 @@ PHLYXR is a next generation lubricant concept designed to combine a premium feel
 <li>✅ Characterisation work completed (rheology and stability checks)</li>
 <li>🔄 In vitro testing and formulation refinement ongoing</li>
 <li>📅 Next: patent filing, manufacturing scale up, and clinical planning</li>
-<li>🎯 Target launch: 2027 (subject to trials and MHRA pathway)</li>
+<li>🎯 Target launch: Q4 2027 (subject to trials and MHRA pathway)</li>
 </ul>
 </div>
 
@@ -283,8 +283,8 @@ Be first to hear about development updates, opportunities to test, and launch an
 <li>Launch announcements and offers</li>
 </ul>
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button large" target="_blank" rel="noopener">Join the mailing list</a>
+<div class="fade-in hero-ctas">
+  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button" rel="noopener">Join the mailing list</a>
 </div>
 
 </div>
@@ -295,8 +295,8 @@ Be first to hear about development updates, opportunities to test, and launch an
 
 Your feedback shapes the product. It takes about 5 minutes.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="https://forms.gle/5mRht5skMUeueyKU8" class="cta-button secondary large" target="_blank" rel="noopener">Take the survey</a>
+<div class="fade-in hero-ctas">
+  <a href="https://forms.gle/5mRht5skMUeueyKU8" class="cta-button secondary" rel="noopener">Take the survey</a>
 </div>
 
 ---

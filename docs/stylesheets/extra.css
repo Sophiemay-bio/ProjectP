@@ -2127,3 +2127,15 @@ body:has([data-md-toggle="drawer"]:checked) {
 /* ============================================
    END OF DARK MODE CSS
    ============================================ */
+
+/* ============================================
+   MOBILE BUTTON FIXES - SIMPLIFIED
+   ============================================ */
+
+/* Ensure CTA panel doesn't add extra padding on mobile */
+@media (max-width: 768px) {.cta-panel {
+    padding: 2rem 1rem;
+  }.cta-panel.hero-ctas {
+    padding: 0;
+  }
+}
