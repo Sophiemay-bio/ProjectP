@@ -4,7 +4,10 @@ description: Introducing PHLYXR, a contraceptive sexual lubricant that prevents 
 ---
 <div class="hero-section">
 
-<img src="assets/logo.png" alt="PHLYXR Logo" class="phlyxr-logo-img fade-in">
+<div class="hero-logo-container fade-in">
+  <div class="hero-logo-pill"></div>
+  <img src="assets/logo.png" alt="PHLYXR Logo" class="phlyxr-logo-img">
+</div>
 
 <div class="kicker fade-in">In development • Preclinical testing</div>
 
