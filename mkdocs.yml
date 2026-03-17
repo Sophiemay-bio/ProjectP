@@ -46,7 +46,7 @@ theme:
   logo: assets/logo.png
 
 extra_css:
-  - stylesheets/extra.css?v=10
+  - stylesheets/extra.css?v=11
 
 extra_javascript:
   - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js
