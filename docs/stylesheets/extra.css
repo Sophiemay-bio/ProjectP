@@ -2268,3 +2268,29 @@ body:has(.md-announce) {
 .md-sidebar--primary .md-sidebar__scrollwrap {
   padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
 }
+
+/* ============================================
+   MOBILE DRAWER CONTENT VISIBILITY FIX
+   ============================================ */
+/* Ensure drawer actually opens against the real Material DOM structure */
+[data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* Keep navigation headings and links visible inside the drawer */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__item {
+  display: block !important;
+  visibility: visible !important;
+  color: var(--phlyxr-text-primary) !important;
+}
+
+/* Match dark mode correctly (attribute selector must target an ancestor) */
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item {
+  color: var(--phlyxr-text-primary) !important;
+}
