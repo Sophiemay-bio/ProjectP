@@ -287,7 +287,7 @@ Be first to hear about development updates, opportunities to test, and launch an
 </ul>
 
 <div class="fade-in hero-ctas">
-  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button" rel="noopener">Join the mailing list</a>
+  <a href="https://forms.gle/3UL5G6cJibZKnsHC7" class="cta-button">Join the mailing list</a>
 </div>
 
 </div>
