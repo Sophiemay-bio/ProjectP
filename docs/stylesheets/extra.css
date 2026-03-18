@@ -2448,3 +2448,83 @@ body:has([data-md-toggle="drawer"]:checked) {
 .md-sidebar--primary .md-nav--secondary {
     margin-top: 0.5rem !important;
 }
+
+/* ============================================
+   SIDEBAR TEXT WRAP & OVERLAP FIX
+   ============================================ */
+
+/* 1. Force the inner scroll/nav containers to stretch to the full width of the drawer */
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. Fix the "On this page" title so it stops overlapping the links */
+.md-sidebar--primary .md-nav__title {
+    position: relative !important;
+    height: auto !important;
+    display: block !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* 3. Reset the TOC list container so it flows naturally downward */
+.md-sidebar--primary .md-nav--secondary,
+.md-sidebar--primary .md-nav--secondary .md-nav__list {
+    position: relative !important;
+    display: block !important;
+    height: auto !important;
+    width: 100% !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    box-sizing: border-box !important;
+}
+
+/* 4. Give the actual text items room to breathe without mid-word breaking */
+.md-sidebar--primary .md-nav__item,
+.md-sidebar--primary .md-nav__link {
+    position: relative !important;
+    display: block !important;
+    height: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: normal !important; 
+    word-break: normal !important; 
+    overflow-wrap: break-word !important; 
+    line-height: 1.4 !important;
+    margin-bottom: 0.25rem !important;
+}
+
+/* ============================================
+   FREEZE BACKGROUND SCROLL WHEN SIDEBAR OPEN
+   ============================================ */
+
+/* Lock both html and body to prevent scrolling on all devices (including iOS) */
+html:has([data-md-toggle="drawer"]:checked),
+body:has([data-md-toggle="drawer"]:checked) {
+    overflow: hidden !important;
+    overscroll-behavior: none !important;
+}
+
+/* Ensure the sidebar itself can still scroll internally */
+.md-sidebar--primary {
+    overscroll-behavior: contain !important;
+}
+
+/* ============================================
+   REMOVE DOUBLE SCROLLBAR FIX
+   ============================================ */
+
+/* Hide the native scrollbar on the outer container */
+.md-sidebar--primary {
+    overflow-y: hidden !important;
+}
+
+/* Ensure the inner container (with the purple styling) handles all scrolling */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+    overflow-y: auto !important;
+    height: 100% !important;
+}
