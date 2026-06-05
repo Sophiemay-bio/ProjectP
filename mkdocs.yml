@@ -69,7 +69,6 @@ extra:
 nav:
   - Home: index.md
   - Survey Information: survey-info.md
-  - Privacy Notice: privacy.md
 
 plugins:
   - search
