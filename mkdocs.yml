@@ -46,11 +46,11 @@ theme:
   logo: assets/logo.png
 
 extra_css:
-  - stylesheets/extra.css?v=10
+  - stylesheets/extra.css?v=12
 
 extra_javascript:
   - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js
-  - javascripts/extra.js
+  - javascripts/extra.js?v=3
 
 extra:
   mailing_list_url: https://forms.gle/3UL5G6cJibZKnsHC7
@@ -69,6 +69,7 @@ extra:
 nav:
   - Home: index.md
   - Survey Information: survey-info.md
+  - Privacy Notice: privacy.md
 
 plugins:
   - search

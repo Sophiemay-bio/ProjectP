@@ -1,13 +1,95 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) with Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNNHEYGKJP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+
+  // Consent Mode: default to denied until the visitor makes a choice.
+  // Silktide Consent Manager updates this once the visitor accepts/rejects.
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+
   gtag('js', new Date());
   gtag('config', 'G-BNNHEYGKJP');
+</script>
+
+<!-- Silktide Consent Manager (open source cookie consent) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" id="silktide-consent-manager-css" href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.css" integrity="sha384-IO1E/jCrQXyH5rwcI0SXP7OXw47JFqQNDQcKhbFvqnL2IunBxxwE2Ne5XyAmCqKs" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.js" integrity="sha384-j4NIMOecmtzMWe9GJADIIe5hTlHG63aiTQ/2XorW10RNyQJg+IU+xwFVDy45wBah" crossorigin="anonymous"></script>
+<style id="silktide-consent-manager-overrides">
+#stcm-wrapper {
+  --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
+  --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
+  --primaryColor: #3400B0;
+  --backgroundColor: #f5f3f7;
+  --textColor: #4b494b;
+  --backdropBackgroundColor: #00000033;
+  --backdropBackgroundBlur: 0px;
+  --iconColor: #3400b0;
+  --iconBackgroundColor: #f5f3f7;
+}
+</style>
+<script>
+  window.silktideConsentManager.init({
+    icon: {
+      position: 'bottomRight',
+    },
+    backdrop: {
+      show: true,
+    },
+    consentTypes: [
+      {
+        id: 'essential',
+        label: 'Essential',
+        description: 'These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions you take, such as setting your privacy preferences.',
+        required: true,
+        onAccept: function () {},
+      },
+      {
+        id: 'analytics',
+        label: 'Analytics',
+        description: 'These cookies help us understand how visitors use our site (via Google Analytics) so we can measure and improve it. All information is aggregated and anonymous.',
+        required: false,
+        onAccept: function () {
+          gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+          });
+          dataLayer.push({ event: 'consent_accepted_analytics' });
+        },
+        onReject: function () {
+          gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+          });
+        },
+      },
+    ],
+    text: {
+      prompt: {
+        description: '<p>We use cookies on our site to keep it running, understand how it is used, and improve your experience. You can accept all cookies, reject non-essential ones, or manage your preferences. See our <a href="/privacy/" target="_self">Privacy Notice</a> for more.</p>',
+        acceptAllButtonText: 'Accept all',
+        acceptAllButtonAccessibleLabel: 'Accept all cookies',
+        rejectNonEssentialButtonText: 'Reject non-essential',
+        rejectNonEssentialButtonAccessibleLabel: 'Reject non-essential cookies',
+        preferencesButtonText: 'Manage preferences',
+        preferencesButtonAccessibleLabel: 'Manage cookie preferences',
+      },
+      preferences: {
+        title: 'Manage your cookie preferences',
+        description: '<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across the PHLYXR website.</p>',
+        creditLinkText: '',
+        creditLinkAccessibleLabel: '',
+      },
+    },
+  });
 </script>
 
 <!-- Structured Data for Organization -->
@@ -67,24 +149,40 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:site_name" content="PHLYXR">
 <meta property="og:type" content="website">
+{% if page %}
 <meta property="og:title" content="{{ page.title | default(config.site_name, true) }}">
-<meta property="og:description" content="{{ page.meta.description | default(config.site_description, true) }}">
-<meta property="og:url" content="{{ page.canonical_url }}">
+{% if page.meta is defined and page.meta and page.meta.description is defined %}
+<meta property="og:description" content="{{ page.meta.description }}">
+{% else %}
+<meta property="og:description" content="{{ config.site_description }}">
+{% endif %}
+<meta property="og:url" content="{{ page.canonical_url | default('', true) }}">
+{% endif %}
 <meta property="og:image" content="{{ config.site_url }}/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
+{% if page %}
 <meta name="twitter:title" content="{{ page.title | default(config.site_name, true) }}">
-<meta name="twitter:description" content="{{ page.meta.description | default(config.site_description, true) }}">
+{% if page.meta is defined and page.meta and page.meta.description is defined %}
+<meta name="twitter:description" content="{{ page.meta.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ config.site_description }}">
+{% endif %}
+{% endif %}
 <meta name="twitter:image" content="{{ config.site_url }}/assets/og-image.png">
 
 <!-- Additional SEO Meta Tags -->
-<meta name="keywords" content="{{ page.meta.keywords | default('STI prevention, sexual lubricant, sexual health, microbiome friendly, non-hormonal contraceptive', true) }}">
+{% if page and page.meta is defined and page.meta and page.meta.keywords is defined %}
+<meta name="keywords" content="{{ page.meta.keywords }}">
+{% else %}
+<meta name="keywords" content="STI prevention, sexual lubricant, sexual health, microbiome friendly, non-hormonal contraceptive">
+{% endif %}
 <meta name="author" content="PHLYXR Team">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="{{ page.canonical_url }}">
+{% if page %}<link rel="canonical" href="{{ page.canonical_url | default('', true) }}">{% endif %}
 {% endblock %}
 
 {% block announce %}
@@ -96,4 +194,55 @@
     <a class="announce-cta-inline primary" href="https://forms.gle/5mRht5skMUeueyKU8" target="_blank" rel="noopener">Survey</a>
   </div>
 </div>
+{% endblock %}
+
+{% block footer %}
+{% macro render_sitemap(items) %}
+  {% for item in items %}
+    {% if item.url %}
+      <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
+    {% endif %}
+    {% if item.children %}
+      {{ render_sitemap(item.children) }}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+<div class="md-footer-sitemap">
+  <div class="md-footer-sitemap__inner md-grid">
+    <div class="md-footer-sitemap__brand">
+      <img src="{{ 'assets/logo.png' | url }}" alt="PHLYXR" class="md-footer-sitemap__logo">
+      <p class="md-footer-sitemap__tagline">A contraceptive sexual lubricant that prevents STI transmission.</p>
+    </div>
+    <nav class="md-footer-sitemap__cols" aria-label="Footer">
+      <div class="md-footer-sitemap__col">
+        <h2>Site map</h2>
+        <ul>
+          {% if nav.items is defined %}
+            {{ render_sitemap(nav.items) }}
+          {% else %}
+            {{ render_sitemap(nav) }}
+          {% endif %}
+        </ul>
+      </div>
+      <div class="md-footer-sitemap__col">
+        <h2>Get involved</h2>
+        <ul>
+          <li><a href="{{ config.extra.mailing_list_url }}" target="_blank" rel="noopener">Join the mailing list</a></li>
+          <li><a href="{{ config.extra.survey_url }}" target="_blank" rel="noopener">Take the survey</a></li>
+          <li><a href="{{ config.extra.startbook_url }}" target="_blank" rel="noopener">Startbook</a></li>
+        </ul>
+      </div>
+      <div class="md-footer-sitemap__col">
+        <h2>Connect</h2>
+        <ul>
+          {% for social in config.extra.social %}
+            <li><a href="{{ social.link }}" target="_blank" rel="noopener">{{ social.name | replace("PHLYXR on ", "") }}</a></li>
+          {% endfor %}
+          <li><a href="mailto:hello@phlyxr.com">hello@phlyxr.com</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+{{ super() }}
 {% endblock %}

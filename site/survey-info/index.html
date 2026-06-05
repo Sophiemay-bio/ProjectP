@@ -18,12 +18,14 @@
         <link rel="prev" href="./..">
       
       
+        <link rel="next" href="../privacy/">
+      
       
         
       
       
       <link rel="icon" href="../assets/favicon.ico">
-      <meta name="generator" content="zensical-0.0.27">
+      <meta name="generator" content="zensical-0.0.44">
     
     
       
@@ -34,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.50057488.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
       
         
           
@@ -53,26 +55,108 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css?v=10">
+      <link rel="stylesheet" href="../stylesheets/extra.css?v=12">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
     
     
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) with Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNNHEYGKJP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+
+  // Consent Mode: default to denied until the visitor makes a choice.
+  // Silktide Consent Manager updates this once the visitor accepts/rejects.
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+
   gtag('js', new Date());
   gtag('config', 'G-BNNHEYGKJP');
+</script>
+
+<!-- Silktide Consent Manager (open source cookie consent) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" id="silktide-consent-manager-css" href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.css" integrity="sha384-IO1E/jCrQXyH5rwcI0SXP7OXw47JFqQNDQcKhbFvqnL2IunBxxwE2Ne5XyAmCqKs" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.js" integrity="sha384-j4NIMOecmtzMWe9GJADIIe5hTlHG63aiTQ/2XorW10RNyQJg+IU+xwFVDy45wBah" crossorigin="anonymous"></script>
+<style id="silktide-consent-manager-overrides">
+#stcm-wrapper {
+  --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
+  --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
+  --primaryColor: #3400B0;
+  --backgroundColor: #f5f3f7;
+  --textColor: #4b494b;
+  --backdropBackgroundColor: #00000033;
+  --backdropBackgroundBlur: 0px;
+  --iconColor: #3400b0;
+  --iconBackgroundColor: #f5f3f7;
+}
+</style>
+<script>
+  window.silktideConsentManager.init({
+    icon: {
+      position: 'bottomRight',
+    },
+    backdrop: {
+      show: true,
+    },
+    consentTypes: [
+      {
+        id: 'essential',
+        label: 'Essential',
+        description: 'These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions you take, such as setting your privacy preferences.',
+        required: true,
+        onAccept: function () {},
+      },
+      {
+        id: 'analytics',
+        label: 'Analytics',
+        description: 'These cookies help us understand how visitors use our site (via Google Analytics) so we can measure and improve it. All information is aggregated and anonymous.',
+        required: false,
+        onAccept: function () {
+          gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+          });
+          dataLayer.push({ event: 'consent_accepted_analytics' });
+        },
+        onReject: function () {
+          gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+          });
+        },
+      },
+    ],
+    text: {
+      prompt: {
+        description: '<p>We use cookies on our site to keep it running, understand how it is used, and improve your experience. You can accept all cookies, reject non-essential ones, or manage your preferences. See our <a href="/privacy/" target="_self">Privacy Notice</a> for more.</p>',
+        acceptAllButtonText: 'Accept all',
+        acceptAllButtonAccessibleLabel: 'Accept all cookies',
+        rejectNonEssentialButtonText: 'Reject non-essential',
+        rejectNonEssentialButtonAccessibleLabel: 'Reject non-essential cookies',
+        preferencesButtonText: 'Manage preferences',
+        preferencesButtonAccessibleLabel: 'Manage cookie preferences',
+      },
+      preferences: {
+        title: 'Manage your cookie preferences',
+        description: '<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across the PHLYXR website.</p>',
+        creditLinkText: '',
+        creditLinkAccessibleLabel: '',
+      },
+    },
+  });
 </script>
 
 <!-- Structured Data for Organization -->
@@ -132,21 +216,31 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:site_name" content="PHLYXR">
 <meta property="og:type" content="website">
+
 <meta property="og:title" content="Survey Information">
+
 <meta property="og:description" content="Information about our market research survey for STI prevention">
+
 <meta property="og:url" content="https://phlyxr.com/survey-info/">
+
 <meta property="og:image" content="https://phlyxr.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
+
 <meta name="twitter:title" content="Survey Information">
+
 <meta name="twitter:description" content="Information about our market research survey for STI prevention">
+
+
 <meta name="twitter:image" content="https://phlyxr.com/assets/og-image.png">
 
 <!-- Additional SEO Meta Tags -->
+
 <meta name="keywords" content="STI prevention, sexual lubricant, sexual health, microbiome friendly, non-hormonal contraceptive">
+
 <meta name="author" content="PHLYXR Team">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://phlyxr.com/survey-info/">
@@ -329,6 +423,22 @@
   
 
       
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../privacy/" class="md-tabs__link">
+        
+  
+  Privacy Notice
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -377,8 +487,7 @@
   <span class="md-ellipsis">
     
   
-    Home
-  
+  Home
 
     
   </span>
@@ -400,7 +509,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
       
@@ -411,8 +520,7 @@
   <span class="md-ellipsis">
     
   
-    Survey Information
-  
+  Survey Information
 
     
   </span>
@@ -429,8 +537,7 @@
   <span class="md-ellipsis">
     
   
-    Survey Information
-  
+  Survey Information
 
     
   </span>
@@ -456,9 +563,9 @@
         <li class="md-nav__item">
   <a href="#survey-information-page" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Survey Information Page
-      
+      </span>
     </span>
   </a>
   
@@ -468,9 +575,9 @@
           <li class="md-nav__item">
   <a href="#about-this-survey" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         About This Survey
-      
+      </span>
     </span>
   </a>
   
@@ -479,9 +586,9 @@
           <li class="md-nav__item">
   <a href="#information-sheet-and-participation-consent" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Information Sheet and Participation Consent
-      
+      </span>
     </span>
   </a>
   
@@ -490,9 +597,9 @@
           <li class="md-nav__item">
   <a href="#do-i-have-to-take-part" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Do I have to take part?
-      
+      </span>
     </span>
   </a>
   
@@ -501,9 +608,9 @@
           <li class="md-nav__item">
   <a href="#what-is-the-purpose-of-the-survey" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What is the purpose of the survey?
-      
+      </span>
     </span>
   </a>
   
@@ -512,9 +619,9 @@
           <li class="md-nav__item">
   <a href="#why-have-i-been-invited" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Why have I been invited?
-      
+      </span>
     </span>
   </a>
   
@@ -523,9 +630,9 @@
           <li class="md-nav__item">
   <a href="#what-will-happen-to-me-if-i-take-part" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What will happen to me if I take part?
-      
+      </span>
     </span>
   </a>
   
@@ -534,9 +641,9 @@
           <li class="md-nav__item">
   <a href="#what-do-i-have-to-do" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What do I have to do?
-      
+      </span>
     </span>
   </a>
   
@@ -545,9 +652,9 @@
           <li class="md-nav__item">
   <a href="#what-are-the-possible-disadvantages-and-risks-of-taking-part" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What are the possible disadvantages and risks of taking part?
-      
+      </span>
     </span>
   </a>
   
@@ -556,9 +663,9 @@
           <li class="md-nav__item">
   <a href="#what-are-the-possible-benefits-of-taking-part" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What are the possible benefits of taking part?
-      
+      </span>
     </span>
   </a>
   
@@ -567,9 +674,9 @@
           <li class="md-nav__item">
   <a href="#what-if-something-goes-wrong" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         What if something goes wrong?
-      
+      </span>
     </span>
   </a>
   
@@ -584,6 +691,32 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Privacy Notice
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -718,6 +851,60 @@
         
       </main>
       
+
+<div class="md-footer-sitemap">
+  <div class="md-footer-sitemap__inner md-grid">
+    <div class="md-footer-sitemap__brand">
+      <img src="../assets/logo.png" alt="PHLYXR" class="md-footer-sitemap__logo">
+      <p class="md-footer-sitemap__tagline">A contraceptive sexual lubricant that prevents STI transmission.</p>
+    </div>
+    <nav class="md-footer-sitemap__cols" aria-label="Footer">
+      <div class="md-footer-sitemap__col">
+        <h2>Site map</h2>
+        <ul>
+          
+            
+  
+    
+    
+  
+    
+      <li><a href="././">Survey Information</a></li>
+    
+    
+  
+    
+      <li><a href="../privacy/">Privacy Notice</a></li>
+    
+    
+  
+
+          
+        </ul>
+      </div>
+      <div class="md-footer-sitemap__col">
+        <h2>Get involved</h2>
+        <ul>
+          <li><a href="https://forms.gle/3UL5G6cJibZKnsHC7" target="_blank" rel="noopener">Join the mailing list</a></li>
+          <li><a href="https://forms.gle/5mRht5skMUeueyKU8" target="_blank" rel="noopener">Take the survey</a></li>
+          <li><a href="https://startbook.app/events/imperial/ventures/phlyxr" target="_blank" rel="noopener">Startbook</a></li>
+        </ul>
+      </div>
+      <div class="md-footer-sitemap__col">
+        <h2>Connect</h2>
+        <ul>
+          
+            <li><a href="https://www.instagram.com/phlyxr/" target="_blank" rel="noopener">Instagram</a></li>
+          
+            <li><a href="https://www.linkedin.com/company/phlyxr/" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+          <li><a href="mailto:hello@phlyxr.com">hello@phlyxr.com</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
         <footer class="md-footer">
   
   <div class="md-footer-meta md-typeset">
@@ -735,7 +922,7 @@
     
     
     <a href="https://www.instagram.com/phlyxr/" target="_blank" rel="noopener" title="PHLYXR on Instagram" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
     </a>
   
     
@@ -743,7 +930,7 @@
     
     
     <a href="https://www.linkedin.com/company/phlyxr/" target="_blank" rel="noopener" title="PHLYXR on LinkedIn" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
 </div>
@@ -752,6 +939,7 @@
   </div>
 </footer>
       
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -761,15 +949,14 @@
     
       
       
-      
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.top","navigation.tabs","navigation.sections","navigation.expand","navigation.indexes","toc.follow","toc.integrate","search.suggest","search.highlight","content.code.copy","announce.dismiss"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.5fd3284f.min.js"></script>
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
       
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
       
-        <script src="../javascripts/extra.js"></script>
+        <script src="../javascripts/extra.js?v=3"></script>
       
     
   </body>
