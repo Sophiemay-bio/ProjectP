@@ -199,14 +199,14 @@
 {% block footer %}
 {% macro render_sitemap(items) %}
   {% for item in items %}
-    {% if item.url %}
-      <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
-    {% endif %}
-    {% if item.children %}
-      {{ render_sitemap(item.children) }}
-    {% endif %}
-  {% endfor %}
-{% endmacro %}
+      {% if item.url %}
+            <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
+                {% endif %}
+                    {% if item.children %}
+                          {{ render_sitemap(item.children) }}
+                              {% endif %}
+                                {% endfor %}
+                                {% endmacro %}}
 <div class="md-footer-sitemap">
   <div class="md-footer-sitemap__inner md-grid">
     <div class="md-footer-sitemap__brand">
@@ -217,6 +217,7 @@
       <div class="md-footer-sitemap__col">
         <h2>Site map</h2>
         <ul>
+          <li><a href="{{ '/' | url }}">Home</a></li>
           {% if nav.items is defined %}
             {{ render_sitemap(nav.items) }}
           {% else %}
